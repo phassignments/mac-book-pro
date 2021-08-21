@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mac Book Pro</title>
+
+  <!--Bootstrap and CSS stylesheet-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col">
+          <img src="images/mac-book-pro.png" alt="" width=80%>
+
+        </div>
+        <div class="col ">
+          <h2>Customize your Blue 24-inch </h2>
+          <h2>iMac with Apple M1 Chip.</h2>
+          <p>Apple M1 Chip With 8-core CPU With 4 performance cores and 4 efficiency cores, 8 core GPU, And 16 core
+            Neural Engine 8GB unified memory 256GB SSD Storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard
+            - US English.</p>
+
+          <!--Memory Section-->
+          <div class="memory ">
+            <h4><b>Memory</b></h4>
+            <button type="button" id="8gb-memory" class="btn btn-outline-dark">8GB Unified Memory</button>
+            <button type="button" id="16gb-memory" class="btn btn-outline-dark">16GB Unified Memory</button>
+          </div>
+
+
+          <!--Storage Section-->
+          <div class="storage ">
+            <h4><b>Storage</b></h4>
+            <button type="button" id="256gb-ssd" class="btn btn-outline-dark">256GB SSD Storage</button>
+            <button type="button" id="512gb-ssd" class="btn btn-outline-dark">512GB SSD Storage</button>
+            <button type="button" id="1tb-ssd" class="btn btn-outline-dark">1TB SSD Storage</button>
+          </div>
+
+
+          <!--Delivery Section-->
+          <div class="delivery">
+            <h4><b>Choose your delivery option </b></h4>
+            <button type="button" id="without-delivery-charge" class="btn btn-outline-dark">Friday, Aug 25 FREE Prime
+              Delivery</button>
+            <button type="button" id="with-delivery-charge" class="btn btn-outline-dark">Friday, Aug 21 Delivery charge
+              $20</button>
+          </div>
+
+
+
+          <!--Price Section-->
+          <div class="price-Table-container">
+            <table class="table">
+
+              <tbody>
+                <tr>
+
+                  <td><b>Best Price</b></td>
+                  <td>$<span id="best-cost"><b>1299</b></span></td>
+                </tr>
+                <tr>
+
+                  <td><b>Extra Memory Cost </b></td>
+                  <td>$<span id="extra-memory-cost"><b>0</b></span></td>
+                </tr>
+                <tr>
+
+                  <td><b>Extra Storage Cost</b> </td>
+                  <td>$<span id="extra-storage-cost"><b>0</b></span></td>
+                </tr>
+                <tr>
+
+                  <td><b>Delivery Charge</b> </td>
+                  <td>$<span id="extra-delivery-cost"><b>0</b></span></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+
+                  <td><b>Total Price</b> </td>
+                  <td>$<span id="total-cost"><b>1299</b></span></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <div class="promo-code-container">
+            <h4>Add Promo Code</h4>
+            <div class="row row-cols-lg-auto g-3 align-items-center">
+              <div class="col-12">
+
+                <input type="text" class="form-control" id="promo-code" placeholder="Enter Promo Code">
+
+              </div>
+
+
+              <div class="col-12">
+                <button id="code-entered" type="submit" class="btn btn-danger">Apply</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <hr>
+    </div>
+
+  </section>
+
+  <!--Footer Section-->
+  <footer class="text-center">
+    <h1> Total : $<span id="display-cost">1299</span></h1>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
